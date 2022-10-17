@@ -39,4 +39,10 @@ float BRMVector3::getZ() const
     return _z;
 }
 
+Vector3 BRMVector3::getBase() const
+{
+    Vector3 v = (Vector3){_x, _y, _z};
+    return v;
+}
+
 BRMVector3::~BRMVector3() {}

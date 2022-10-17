@@ -17,5 +17,6 @@ public:
     float getX() const;
     float getY() const;
     float getZ() const;
+    Vector3 getBase() const;
     ~BRMVector3();
 };
