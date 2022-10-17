@@ -16,6 +16,7 @@ private:
     BRMVector3 _target;
 public:
     BRMCamera();
+    BRMCamera(const BRMCamera &);
     void setPosition(BRMVector3 position);
     void setMode(int mode);
     void setFOV(float fov);

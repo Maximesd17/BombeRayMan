@@ -5,6 +5,10 @@ BRMCamera::BRMCamera()
     _camera = std::make_unique<Camera>();
 }
 
+BRMCamera::BRMCamera(const BRMCamera &camera) {
+    _camera = std::make_unique<Camera>(*camera.getCamera());
+}
+
 void BRMCamera::setPosition(BRMVector3 position)
 {
     _position = position;
