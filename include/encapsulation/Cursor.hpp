@@ -16,5 +16,6 @@ public:
     void disable();
     bool isLocked() const;
     bool isOnScreen() const;
+    void setType(MouseCursor type) const;
     ~BRMCursor();
 };

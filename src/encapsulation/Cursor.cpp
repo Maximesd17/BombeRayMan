@@ -40,3 +40,10 @@ bool BRMCursor::isOnScreen() const
 {
     return IsCursorOnScreen();
 }
+
+void BRMCursor::setType(MouseCursor type) const
+{
+    SetMouseCursor(type);
+}
+
+BRMCursor::~BRMCursor() {}
